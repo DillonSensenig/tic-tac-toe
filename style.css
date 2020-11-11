@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  background-color: aqua;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 500px;
+  height: 500px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.cell {
+  background-color: aliceblue;
+  border-style: solid;
+  width: 100px;
+  height: 100px;
+}
+
+button {
+  display: flex;
+  align-self: center;
+  width: 100px;
+}
