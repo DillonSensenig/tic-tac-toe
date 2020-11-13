@@ -25,7 +25,7 @@ function cellChosen(cellNumber) {
 const winner = [
   [0, 1, 2],
   [3, 4, 5],
-  [6,7, 8],
+  [6, 7, 8],
   [0, 3, 6],
   [1, 4, 7],
   [2, 5, 8],
@@ -33,7 +33,7 @@ const winner = [
   [2, 4, 6]
 ]
 
-function checkWinner(winner) = {
+function checkWinner(winner) {
   if (winner === currentPlayer);
   console.log("You win!");
 }
@@ -44,6 +44,15 @@ function checkWinner(winner) = {
 
 //remove "X's" and "O's"
 //restart game
-const restart = document.querySelector(".restart");
-restart.addEventListener("click", () => {
-});
+
+//const restart = document.querySelector(".restart");
+//restart.addEventListener("click", () => {
+//});
+
+// Function that removes XO's inside of the cells after clicking the restart button. Previous iteration broke the onClick for the cells.
+function resetGame() {
+  for(i = 0; i < 9; i++) {
+  document.getElementById(i.toString()).innerHTML = "";
+ }
+}
+
