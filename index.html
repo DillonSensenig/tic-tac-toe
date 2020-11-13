@@ -29,9 +29,9 @@
         <div class="cell" onclick="cellChosen(7)" id="7"></div>
         <div class="cell" onclick="cellChosen(8)" id="8"></div>
       </div>
-      <div class="text">Print out winner or draw</div>
-      <button class="restart">Restart Game</button>
+      <div class="text" id="result">Print out winner or draw</div>
+      <!-- added onclick="resetGame()" for restart function in js -->
+      <button class="restart" id="re" onclick="resetGame()" >Restart Game</button>
     </div>
   </body>
 </html>
-
