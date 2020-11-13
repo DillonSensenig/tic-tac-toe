@@ -61,11 +61,3 @@ function resetGame() {
 // Bonus: The grid should no longer be playable after the game ends, but you could create a button to reset the grid to play a second game. The losing symbol should go first.
 
 // Bonus: The game can be played on smaller screens if it was designed to be responsive.
-
-//remove "X's" and "O's"
-//restart game
-//const restart = document.querySelector(".restart");
-//restart.addEventListener("click", () => {
-//});
-
-
