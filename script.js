@@ -7,22 +7,43 @@
 
 var currentPlayer = Math.floor(Math.random() * 2) == 0 ? "X" : "O";
 
-// Added cellChosen function that detects click in each cell "cellNumber" uses .innerHTML to insert X / O into empty cell. 
+// Added cellChosen function that detects click in each cell "cellNumber" uses .innerHTML to insert X / O into empty cell.
 
 function cellChosen(cellNumber) {
   if(document.getElementById(cellNumber.toString()).innerHTML == "") {
     document.getElementById(cellNumber.toString()).innerHTML = currentPlayer;
     currentPlayer = currentPlayer == "X" ? "O" : "X";
   }
-}
+};
 
 // The game should detect a winner or a draw and print the result beneath the grid.
 
 // A win is 3 consecutive symbols in a row, a column, or either diagonal through the center.
 
 // A draw is a filled grid without a winner.
+//create array of winning combinations
+const winner = [
+  [0, 1, 2],
+  [3, 4, 5],
+  [6,7, 8],
+  [0, 3, 6],
+  [1, 4, 7],
+  [2, 5, 8],
+  [0, 4, 8],
+  [2, 4, 6]
+]
+
+function checkWinner(winner) = {
+  if (winner === currentPlayer);
+  console.log("You win!");
+}
 
 // Bonus: The grid should no longer be playable after the game ends, but you could create a button to reset the grid to play a second game. The losing symbol should go first.
 
 // Bonus: The game can be played on smaller screens if it was designed to be responsive.
 
+//remove "X's" and "O's"
+//restart game
+const restart = document.querySelector(".restart");
+restart.addEventListener("click", () => {
+});
