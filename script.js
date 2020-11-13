@@ -33,10 +33,18 @@ const winner = [
   [2, 4, 6]
 ]
 
-function checkWinner(winner) {
+// loop through each winning combination. Then, it needs to loop through the 3 cell numbers and check if they're the same
+// create a boolean variable that keeps track if each cell is the same in the combination
+// start as true, but if it ever is not the same, become false, and go to the next combination
+// if it finds any, prevent further play (use a global variable that disables cellchosen) and print winner
+// check if every cell is full, and if they are, and there is no winner, then it needs to print out that it's a draw
+
+function checkWin(winner) {
   if (winner === currentPlayer);
   console.log("You win!");
 }
+
+
 
 // Bonus: The grid should no longer be playable after the game ends, but you could create a button to reset the grid to play a second game. The losing symbol should go first.
 
