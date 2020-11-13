@@ -28,7 +28,6 @@ const winner = [
 
 // function to check for a winner. Loops through array and cells to see if one matches the other. Returns "result". Boolean to check if said is true/false
 function checkWin() {
-  var foundWin = "";
   for (let i = 0; i < winner.length; i++) {
     var canBeWin = true;
     for (let j = 0; j < winner[i].length; j++) {
@@ -38,7 +37,6 @@ function checkWin() {
       }
     }
     if(canBeWin) {
-       foundWin = currentPlayer; 
         return (document.getElementById("result"))
         .innerHTML ="Winner!" 
        break;
